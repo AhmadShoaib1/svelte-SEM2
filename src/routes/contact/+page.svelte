@@ -4,7 +4,5 @@
 </script>
 
 <Header/>
-
-<h1>hello and welcome</h1>
-
+<h1>these are the info</h1>
 <Footer/>
