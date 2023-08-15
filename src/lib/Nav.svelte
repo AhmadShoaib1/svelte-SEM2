@@ -16,9 +16,9 @@
   
   <nav>
     <ul>
-      <li>home</li>
-      <li>contact</li>
-      <li>address</li>
+      <a href=""><li>home</li></a>
+      <a href=""><li>contact</li></a>
+      <a href=""><li>address</li></a>
     </ul>
   </nav>
   
