@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .child {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1.5px solid purple;
+    height: 100vh; /* Adjust the height to cover the entire screen */
+  }
+  
+  .image-button {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+
+  .image-button:hover{
+    filter:brightness(1.2);
+  }
+
+  .first-button{
+    background-image:url('../img/shisui.jpg');
+  }
+
+  .second-button{
+    background-image:url('../img/madara.jpg');
+  }
+
+  .third-button{
+    background-image:url('../img/itachi.jpg');
+  }
+  .fourth-button{
+    background-image:url('../img/naruto.jpg');
+
+  }
+  .fifth-button{
+    background-image:url('../img/minato.jpg');
+  }
+  .sixth-button{
+    background-image:url('../img/jiraiya.jpg');
+  }
+  
+  .child:hover .image-button {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .last_child {
+    margin-left: auto;
+  }
+  
