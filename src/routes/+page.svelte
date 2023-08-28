@@ -6,16 +6,19 @@
     <div class="child">
       <button class="image-button second-button" ></button>
     </div>
-    <div class="child last_child">
+    <div class="child">
       <button class="image-button third-button"></button>
     </div>
-    <div class="child last_child">
+
+    
+    <div class="child">
         <button class="image-button fourth-button"></button>
       </div>
-      <div class="child last_child">
+      <div class="child">
         <button class="image-button fifth-button"></button>
       </div>
-      <div class="child last_child">
+      <div class="child">
         <button class="image-button sixth-button"></button>
       </div>
+  
   </div>
