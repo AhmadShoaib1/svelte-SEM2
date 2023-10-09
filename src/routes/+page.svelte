@@ -1,4 +1,7 @@
+<script>
+    import Header from "../lib/Header.svelte";
 
+</script>
 <div class="parent">
     <div class="child" >
       <button class="image-button first-button"></button>
@@ -22,3 +25,4 @@
       </div>
   
   </div>
+

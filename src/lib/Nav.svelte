@@ -1,24 +1,13 @@
-<style>
+<svelte:head>
+    <link rel="stylesheet" href="css/Nav.css" />
+</svelte:head>
 
-    ul {
-      list-style: none;
-      display: flex;
-    }
-  
-    li {
-      margin-right: 30px;
-      border: 2px solid red;
-      padding: 10px 15px;
-      background-color: black;
-      color: white;
-    }
-  </style>
-  
-  <nav>
+<slot />
+<body>
     <ul>
-      <a href=""><li>home</li></a>
-      <a href=""><li>contact</li></a>
-      <a href=""><li>address</li></a>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Animes</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
-  
+</body>
