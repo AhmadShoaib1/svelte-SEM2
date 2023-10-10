@@ -2,6 +2,9 @@
     import Header from "../lib/Header.svelte";
 
 </script>
+<Header>
+  
+</Header>
 <div class="parent">
     <div class="child" >
       <button class="image-button first-button"></button>
