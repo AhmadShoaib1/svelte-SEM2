@@ -1,31 +1,21 @@
 <script>
-    import Header from "../lib/Header.svelte";
-
+  import Header from "../lib/Header.svelte";
+  let buttons = [
+    "first-button",
+    "second-button",
+    "third-button",
+    "fourth-button",
+    "fifth-button",
+    "sixth-button"
+  ];
 </script>
-<Header>
-  
-</Header>
+
+<Header />
+
 <div class="parent">
-    <div class="child" >
-      <button class="image-button first-button"></button>
-    </div>
+  {#each buttons as button (button)}
     <div class="child">
-      <button class="image-button second-button" ></button>
+      <button class={`image-button ${button}`}></button>
     </div>
-    <div class="child">
-      <button class="image-button third-button"></button>
-    </div>
-
-    
-    <div class="child">
-        <button class="image-button fourth-button"></button>
-      </div>
-      <div class="child">
-        <button class="image-button fifth-button"></button>
-      </div>
-      <div class="child">
-        <button class="image-button sixth-button"></button>
-      </div>
-  
-  </div>
-
+  {/each}
+</div>
