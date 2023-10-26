@@ -6,7 +6,7 @@
 <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/anime">Animes</a></li>
+      <li><a href="/character">Characters</a></li>
       <li><a href="/recommendation">Recommendation</a></li>
       <li><a href="/">Contact</a></li>
     </ul>

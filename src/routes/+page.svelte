@@ -11,8 +11,10 @@
 </script>
 
 <Header />
+<p>These are the some of the most like Naruto characters</p>
 
 <div class="parent">
+  
   {#each buttons as button (button)}
     <div class="child">
       <button class={`image-button ${button}`}></button>
