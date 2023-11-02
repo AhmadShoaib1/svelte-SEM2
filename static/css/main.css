@@ -1,6 +1,10 @@
-Nav body {
+body {
   margin: 0;
-  height: 100vh;
+}
+
+.nav {
+  margin: 10px 0 ;
+  height: 70px;
   display: flex;
   justify-content: flex;
   align-items: center;
@@ -8,7 +12,7 @@ Nav body {
   background-color: #08090B;
 }
 
-Nav ul {
+.nav ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,30 +20,34 @@ Nav ul {
   list-style-type: none;
 }
 
-
-Nav ul li {
+.nav ul li {
   flex-grow: 1;
   margin-right: 20px;
+  position: relative;
 }
 
-Nav ul li a {
+.nav ul li a {
   color: gray;
   font-size: 35px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px 10px;
-  margin: 0px 10 px;
+  margin: 0px 10px;
   position: relative;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
+.nav ul li:hover ul {
+  display: block;
+}
 
-Nav a:hover {
+.nav a:hover {
   background-color: dodgerblue;
   color: white;
 }
 
-Nav a::before {
+.nav a::before,
+.nav a::after {
   content: "";
   position: absolute;
   bottom: 12px;
@@ -49,34 +57,23 @@ Nav a::before {
   border: 3px solid dodgerblue;
   border-width: 0 0 3px 3px;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-
-Nav a:hover::before {
+.nav a:hover::before,
+.nav a:hover::after {
   opacity: 1;
   bottom: -8px;
   left: -8px;
-}
-
-Nav a:hover::after {
-  opacity: 1;
-  bottom: -8px;
-  left: -8px;
-}
-
-
-body {
-  margin: 0;
 }
 
 .parent {
+  margin-top: 45px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 100vh);
   gap: 40px;
-  /* Adjust the gap between cells */
 }
 
 @media (max-width: 1000px) {
@@ -86,13 +83,14 @@ body {
 }
 
 p {
+  margin: 30px 5px;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
   text-align: center;
   max-width: 600px;
-  margin: 20ox auto;
+  margin: 20px auto;
 }
 
 .child {
@@ -156,4 +154,31 @@ p {
 
 .last_child {
   margin-left: auto;
+}
+
+
+.nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #08090B;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav ul li:hover ul {
+  display: block;
+}
+
+.nav ul ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav ul ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
