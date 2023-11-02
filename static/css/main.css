@@ -164,6 +164,7 @@ p {
   left: 0;
   background-color: #08090B;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .nav ul li:hover ul {
