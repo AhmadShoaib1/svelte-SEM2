@@ -1,175 +1,171 @@
-
-Nav body
-{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: flex;
-    align-items: center;
-    font-family: sans-serif;
-    background-color: #08090B;
+Nav body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #08090B;
 }
 
-Nav ul
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+Nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 
 Nav ul li {
-  flex-grow:1;
-    margin-right: 20px; 
-}
-Nav ul li a
-{
-    color: gray;
-    font-size: 35px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    margin: 0px 10 px;
-    position: relative;
-    transition: all .5s;
+  flex-grow: 1;
+  margin-right: 20px;
 }
 
-
-Nav a:hover
-{
-    background-color: dodgerblue;
-    color: white;
+Nav ul li a {
+  color: gray;
+  font-size: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0px 10 px;
+  position: relative;
+  transition: all .5s;
 }
 
-Nav a::before
-{
-    content: "";
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    height: 12px;
-    width: 12px;
-    border: 3px solid dodgerblue;
-    border-width: 0 0 3px 3px;
-    opacity: 0;
-    transition: all .3s;
+
+Nav a:hover {
+  background-color: dodgerblue;
+  color: white;
 }
 
-Nav a::after
-{
-    content: "";
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    height: 12px;
-    width: 12px;
-    border: 3px solid dodgerblue;
-    border-width: 0 0 3px 3px;
-    opacity: 0;
-    transition: all .3s;
+Nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  height: 12px;
+  width: 12px;
+  border: 3px solid dodgerblue;
+  border-width: 0 0 3px 3px;
+  opacity: 0;
+  transition: all .3s;
 }
 
-Nav a:hover::before
-{
-    opacity: 1;
-    bottom: -8px;
-    left: -8px;
+Nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  height: 12px;
+  width: 12px;
+  border: 3px solid dodgerblue;
+  border-width: 0 0 3px 3px;
+  opacity: 0;
+  transition: all .3s;
 }
 
-Nav a:hover::after
-{
-    opacity: 1;
-    bottom: -8px;
-    left: -8px;
+Nav a:hover::before {
+  opacity: 1;
+  bottom: -8px;
+  left: -8px;
+}
+
+Nav a:hover::after {
+  opacity: 1;
+  bottom: -8px;
+  left: -8px;
 }
 
 
 body {
-    margin: 0;
-  }
-  
+  margin: 0;
+}
+
+.parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100vh);
+  gap: 40px;
+  /* Adjust the gap between cells */
+}
+
+@media (max-width: 1000px) {
   .parent {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 100vh);
-    gap: 40px; /* Adjust the gap between cells */
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  @media (max-width: 1000px) {
-    .parent {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  p{
-    font-size:24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .child {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 10px;
-  }
-  
-  .image-button {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    border: 1.5px solid purple;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .image-button:hover {
-    filter: brightness(1.2);
-  }
-  
-  .first-button {
-    background-image: url('../img/shisui.jpg');
-  }
-  
-  .second-button {
-    background-image: url('../img/madara.jpg');
-  }
-  
-  .third-button {
-    background-image: url('../img/itachi.jpg');
-  }
-  
-  .fourth-button {
-    background-image: url('../img/naruto.jpg');
-  }
-  
-  .fifth-button {
-    background-image: url('../img/minato.jpg');
-  }
-  
-  .sixth-button {
-    background-image: url('../img/jiraiya.jpg');
-  }
-  
-  .child:hover .image-button {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .last_child {
-    margin-left: auto;
-  }
-  
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  max-width: 600px;
+  margin: 20ox auto;
+}
+
+.child {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.image-button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  border: 1.5px solid purple;
+  padding: 0;
+  margin: 0;
+}
+
+.image-button:hover {
+  filter: brightness(1.2);
+}
+
+.first-button {
+  background-image: url('../img/shisui.jpg');
+}
+
+.second-button {
+  background-image: url('../img/madara.jpg');
+}
+
+.third-button {
+  background-image: url('../img/itachi.jpg');
+}
+
+.fourth-button {
+  background-image: url('../img/naruto.jpg');
+}
+
+.fifth-button {
+  background-image: url('../img/minato.jpg');
+}
+
+.sixth-button {
+  background-image: url('../img/jiraiya.jpg');
+}
+
+.child:hover .image-button {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.last_child {
+  margin-left: auto;
+}
