@@ -1,17 +1,17 @@
 <script>
   import Header from "../lib/Header.svelte";
-  let buttons = [
-    "first-button",
-    "second-button",
-    "third-button",
-    "fourth-button",
-    "fifth-button",
-    "sixth-button"
+  letet characters = [
+    { name: "Shisui", info: "Uchiha clan member" },
+    { name: "Madara", info: "Legendary Uchiha" },
+    { name: "Itachi", info: "Prodigy Uchiha" },
+    { name: "Naruto", info: "Hokage-to-be" },
+    { name: "Minato", info: "Fourth Hokage" },
+    { name: "Jiraiya", info: "Legendary Sannin" },
   ];
 </script>
 
 <Header />
-<p>These are the some of the most like Naruto characters</p>
+<p>These are the some of the most liked Naruto characters</p>
 
 <div class="parent">
   
