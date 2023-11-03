@@ -11,8 +11,8 @@
         <li>
             <a href="/recommendation">Recommendation</a>
             <ul class="dropdown">
-                <li><a href="/recommendation/option1">Jujutsu Kaisen</a></li>
-                <li><a href="/recommendation/option2">One Piece</a></li>
+                <li><a href="/recommendation/jujutsu">Jujutsu Kaisen</a></li>
+                <li><a href="/recommendation/one-piece">One Piece</a></li>
             </ul>
         </li>
         <li><a href="/">Contact</a></li>

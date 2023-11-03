@@ -1,7 +1,7 @@
 <script>
   import Header from "../lib/Header.svelte";
   let characters = [
-    { name: "Shisui", info: "Uchiha clan member" },
+    { name: "Shisui", info: "Uchiha clan member", link: "/../img/jiraiya.jpg" },
     { name: "Madara", info: "Legendary Uchiha" },
     { name: "Itachi", info: "Prodigy Uchiha" },
     { name: "Naruto", info: "Hokage-to-be" },
@@ -16,36 +16,26 @@
 </script>
 
 <Header />
+<p>these are the most liked Naruto characters</p>
 <div class="parent">
-  {#each characters as { name, info }, index (name)}
-    <div
+  {#each characters as { name, info, link }, index (name)}
+    <a
+      href={link}
       class="child"
       on:mouseenter={() => toggleFlip(index)}
       on:mouseleave={() => toggleFlip(index)}
       on:focus={() => toggleFlip(index)}
       on:blur={() => toggleFlip(index)}
       tabindex="0"
-      role="button"
     >
-      {#if flipped[index]}
-        <div class="image-container flipped">
-          <div class="front">
-            <img src={`../img/${name.toLowerCase()}.jpg`} alt={name} />
-          </div>
-          <div class="back">
-            <p>{info}</p>
-          </div>
+      <div class="image-container" class:flipped={flipped[index]}>
+        <div class="front">
+          <img src={`../img/${name.toLowerCase()}.jpg`} alt={name} />
         </div>
-      {:else}
-        <div class="image-container">
-          <div class="front">
-            <img src={`../img/${name.toLowerCase()}.jpg`} alt={name} />
-          </div>
-          <div class="back">
-            <p>{info}</p>
-          </div>
+        <div class="back">
+          <p>{info}</p>
         </div>
-      {/if}
-    </div>
+      </div>
+    </a>
   {/each}
 </div>
