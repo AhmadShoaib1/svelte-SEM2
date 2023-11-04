@@ -103,7 +103,7 @@ p {
   align-items: center;
   height: 100%;
   padding: 10px;
-  padding: top 20px; ;
+  padding-top: 20px;
   overflow: hidden;
 }
 
@@ -158,30 +158,6 @@ p {
 
 .image-button:hover {
   filter: brightness(1.2);
-}
-
-.first-button {
-  background-image: url('../img/shisui.jpg');
-}
-
-.second-button {
-  background-image: url('../img/madara.jpg');
-}
-
-.third-button {
-  background-image: url('../img/itachi.jpg');
-}
-
-.fourth-button {
-  background-image: url('../img/naruto.jpg');
-}
-
-.fifth-button {
-  background-image: url('../img/minato.jpg');
-}
-
-.sixth-button {
-  background-image: url('../img/jiraiya.jpg');
 }
 
 .child:hover .image-button {
