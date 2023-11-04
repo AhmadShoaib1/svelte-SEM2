@@ -10,3 +10,7 @@ let additionalInfo = "will put info here";
 <svelte:head>
     <link rel="stylesheet" href="css/main.css" />
 </svelte:head>
+
+<div class="additional-info">
+    <p>{additionalInfo}</p>
+  </div>
