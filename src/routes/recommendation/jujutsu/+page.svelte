@@ -1,8 +1,8 @@
 <script>
     let animeList = [
-      { name: "Anime 1", image: "anime1.jpg", info: "Information about Anime 1" },
-      { name: "Anime 2", image: "anime2.jpg", info: "Information about Anime 2" },
-    { name: "Anime 3", image: "anime3.jpg", info: "Information about Anime 3" }
+      { name: "Anime 1", image: "Gojo.jpg", info: "Information about Anime 1" },
+      { name: "Anime 2", image: "Sukuna.jpg", info: "Information about Anime 2" },
+    { name: "Anime 3", image: "nanami.jpg", info: "Information about Anime 3" }
 ];
 let additionalInfo = "will put info here";
 </script>
