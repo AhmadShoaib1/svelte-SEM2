@@ -15,7 +15,7 @@
   }
 </script>
 
-<Header />
+
 <p>these are the most liked Naruto characters</p>
 <div class="parent">
   {#each characters as { name, info, link }, index (name)}

@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="static/css/main.css" />
 </svelte:head>
 
 <div class="additional-info">
