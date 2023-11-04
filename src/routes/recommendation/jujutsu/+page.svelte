@@ -2,4 +2,8 @@
   <link rel="stylesheet" href="css/main.css" />
 </svelte:head>
 
-<p>Jujutsu Kaisen</p>
+<script>
+    let animeList = [
+      { name: "Anime 1", image: "anime1.jpg", info: "Information about Anime 1" }
+];
+</script>
