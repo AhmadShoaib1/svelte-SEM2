@@ -1,17 +1,17 @@
 <script>
     let animeList = [
         {
-            name: "Anime 1",
+            name: "Gojo",
             image: "Gojo.jpg",
             info: "Information about Anime 1",
         },
         {
-            name: "Anime 2",
+            name: "Sukuna",
             image: "Sukuna.jpg",
             info: "Information about Anime 2",
         },
         {
-            name: "Anime 3",
+            name: "Nanami",
             image: "nanami.jpg",
             info: "Information about Anime 3",
         },
@@ -30,7 +30,7 @@
 <div class="anime-container">
     {#each animeList as { name, image, info } (name)}
         <div class="anime-entry">
-            <div class="image-container">
+            <div class="image-container-jj">
                 <img src={`../img/${image}`} alt={name} />
             </div>
             <div class="info-container">
