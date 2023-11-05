@@ -256,3 +256,8 @@ p {
   padding: 0;
   text-align: left;
 }
+.dotted-info li {
+  margin-bottom: 8px;
+  border-bottom: 1px dotted #333;
+  padding-bottom: 8px;
+}
