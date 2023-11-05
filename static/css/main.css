@@ -203,9 +203,7 @@ body {
   margin: 0;
 }
 
-
-
-
-
-
-
+.additional-info {
+  background-color: #ddd;
+  padding: 10px;
+}
