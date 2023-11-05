@@ -22,21 +22,22 @@
 <svelte:head>
     <link rel="stylesheet" href="static/css/main.css" />
 </svelte:head>
+<body>
+    <div class="additional-info">
+        <p>{additionalInfo}</p>
+    </div>
 
-<div class="additional-info">
-    <p>{additionalInfo}</p>
-</div>
-
-<div class="anime-container">
-    {#each animeList as { name, image, info } (name)}
-        <div class="anime-entry">
-            <div class="image-container-jj">
-                <img src={`../img/${image}`} alt={name} />
+    <div class="anime-container">
+        {#each animeList as { name, image, info } (name)}
+            <div class="anime-entry">
+                <div class="image-container-jj">
+                    <img src={`../img/${image}`} alt={name} />
+                </div>
+                <div class="info-container">
+                    <h2>{name}</h2>
+                    <p>{info}</p>
+                </div>
             </div>
-            <div class="info-container">
-                <h2>{name}</h2>
-                <p>{info}</p>
-            </div>
-        </div>
-    {/each}
-</div>
+        {/each}
+    </div>
+</body>
