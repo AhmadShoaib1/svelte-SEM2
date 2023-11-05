@@ -261,3 +261,7 @@ p {
   border-bottom: 1px dotted #333;
   padding-bottom: 8px;
 }
+.dotted-info li:not(:last-child)::after {
+  content: " \u2022"; 
+  margin-left: 8px;
+}
