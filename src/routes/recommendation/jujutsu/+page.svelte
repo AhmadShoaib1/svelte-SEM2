@@ -29,9 +29,19 @@
             ],
         },
         {
-            name: "Nanami",
-            image: "nanami.jpg",
-            info: "Information about Anime 3",
+            name: "Nanami Kento",
+            image: "Nanami.jpg",
+            info: [
+                "Nanami Kento is a character in 'Jujutsu Kaisen.'",
+                "A jujutsu sorcerer known for his pragmatic and no-nonsense approach to combat.",
+                "Nanami is a former salaryman who became a jujutsu sorcerer, adding a unique twist to his character.",
+                "Possesses exceptional analytical skills and a strong sense of duty.",
+                "His signature technique is the 'Ratio Technique,' allowing him to assess and exploit the efficiency of cursed techniques.",
+                "Despite his stern exterior, Nanami is a principled and honorable individual.",
+                "He becomes a mentor to Yuji Itadori and plays a crucial role in guiding the protagonist.",
+                "Nanami's character brings a sense of realism to the series, navigating the challenges of the jujutsu sorcerer world with a practical mindset.",
+                "With a distinctive appearance and calm demeanor, Nanami Kento has become a fan-favorite character.",
+            ],
         },
     ];
     let additionalInfo = "will put info here";
