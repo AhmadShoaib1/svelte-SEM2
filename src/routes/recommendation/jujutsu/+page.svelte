@@ -3,12 +3,20 @@
         {
             name: "Gojo",
             image: "Gojo.jpg",
-            info: "Information about Anime 1",
+            info:[
+                "Limitless Cursed Technique, manipulating space.",
+                "Six Eyes enhance perception, making him unbeatable in combat.",
+                "Combines strategic intelligence with overwhelming strength.",
+                "Wears a blindfold to suppress his power; removing it unleashes immense strength.",
+                "Known as the 'Strongest Jujutsu Sorcerer' in the series.",
+                "Charismatic and humorous personality, a fan favorite.",
+                "Iconic design with white hair and striking blue eyes."
+            ],
         },
         {
             name: "Sukuna",
             image: "Sukuna.jpg",
-            info: "Information about Anime 2",
+            info: "{Information about Anime 2}",
         },
         {
             name: "Nanami",
