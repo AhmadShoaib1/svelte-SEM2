@@ -63,7 +63,14 @@
                 </div>
                 <div class="info-container">
                     <h2>{name}</h2>
-                    <p>{info}</p>
+                    <p>{info[info.length - 1]}</p>
+                    <div class="dotted-info">
+                        <ul>
+                            {#each info as item (item)}
+                                <li>{item}</li>
+                            {/each}
+                        </ul>
+                    </div>
                 </div>
             </div>
         {/each}
