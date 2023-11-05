@@ -1,8 +1,11 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
 }
+
+/* Navigation styling */
 .nav {
   margin: 10px 0;
   height: 70px;
@@ -66,6 +69,35 @@ body {
   left: -8px;
 }
 
+/* Dropdown styling */
+.nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #08090B;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav ul li:hover ul {
+  display: block;
+}
+
+.nav ul ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav ul ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Main page styling */
 .parent {
   margin-top: 45px;
   padding: 20px;
@@ -82,7 +114,7 @@ body {
   }
 }
 
-p {
+.parent p {
   margin: 30px 5px;
   font-size: 24px;
   font-weight: bold;
@@ -169,36 +201,7 @@ p {
   margin-left: auto;
 }
 
-/* Dropdown styling */
-.nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #08090B;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nav ul li:hover ul {
-  display: block;
-}
-
-.nav ul ul li {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.nav ul ul li a {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-
-/* styling for jujutsu*/
-
+/* Jujutsu page styling */
 .additional-info {
   background-color: #ddd;
   padding: 10px;
@@ -237,4 +240,3 @@ h2 {
 p {
   color: #666;
 }
-
