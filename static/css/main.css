@@ -214,3 +214,11 @@ body {
   justify-content: space-around;
   margin: 20px;
 }
+.anime-entry {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
