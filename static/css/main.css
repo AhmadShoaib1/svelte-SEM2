@@ -202,7 +202,6 @@ body {
 }
 
 /* Jujutsu page styling */
-/* Jujutsu page styling */
 .additional-info {
   background-color: #ddd;
   padding: 10px;
@@ -220,7 +219,7 @@ body {
   border: 1px solid #ccc;
   margin: 10px;
   padding: 15px;
-  width: 300px;
+  width: 550px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -254,22 +253,27 @@ p {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  padding: 10px;
 }
 
 .dotted-info ul {
   list-style-type: none;
   padding: 0;
   text-align: left;
+  max-height: 80%;
+  overflow-y: auto;
 }
 
 .dotted-info li {
   margin-bottom: 8px;
   border-bottom: 1px dotted #333;
   padding-bottom: 8px;
+  word-wrap: break-word;
 }
 
-/* Add dot after each line of information */
+
 .dotted-info li:not(:last-child)::after {
-  content: " *"; /* Unicode character for a bullet point */
+  content: " *"; 
   margin-left: 8px;
 }
