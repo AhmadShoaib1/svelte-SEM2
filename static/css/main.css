@@ -30,6 +30,8 @@ body {
   position: relative;
 }
 
+
+
 .nav ul li a {
   color: gray;
   font-size: 20px;
@@ -37,6 +39,11 @@ body {
   padding: 5px 10px;
   position: relative;
   transition: all 0.5s;
+  color: white;
+}
+
+.nav ul li span {
+  color: white; 
 }
 
 .nav ul li:hover ul {
@@ -96,6 +103,7 @@ body {
   text-decoration: none;
   display: block;
 }
+
 
 /* Main page styling */
 .parent {
