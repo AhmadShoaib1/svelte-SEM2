@@ -232,31 +232,28 @@ body {
 
 .grid { 
   display: grid;
-  grid-template-rows: 30rem 20rem 20rem;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
-  "s1"
-  "s2"
-  "s3"
+    "s1"
+    "s2"
+    "s3";
 }
+
 .s1 { 
   grid-area: s1;
-  background-color: #FF0000;
 }
+
 .s2 { 
   grid-area: s2;
-  background-color: #00FF36;
+  text-align: center;
 }
+
 .s3 { 
   grid-area: s3;
-  background-color: #0030FF;
 }
 
 .info-container {
   text-align: center;
-}
-
-.container{
-  max-height: 1000px;
 }
 
 h2 {
@@ -297,8 +294,8 @@ p {
   word-wrap: break-word;
 }
 
-
-.dotted-info li:not(:last-child)::after {
-  content: " *"; 
-  margin-left: 8px;
+.dotted-info li:not(:last-child)::before {
+  content: "*"; 
+  margin-left: 4px;
+  margin-right: 10px;
 }

@@ -63,7 +63,7 @@
                 </div>
                 <div class="s2">
                     <h2>{name}</h2>
-                    <p>{info[info.length - 1]}</p>
+                    <p>{info[info.length]}</p>
                 </div>
                 <div class="info-container s3">
                     <div class="dotted-info">
