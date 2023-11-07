@@ -314,7 +314,7 @@ body {
 /* one-piece.css */
 
 .one-piece-section {
-  max-width: 600px;
+  max-width: auto;
   margin: 20px auto;
   padding: 20px;
   background-color: #f5f5f5;
@@ -323,12 +323,13 @@ body {
 }
 
 .one-piece-section p {
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.5;
   color: #333;
+  border: 2px solid black;
 }
 
-.one-piece-section button {
+.button-op {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -339,7 +340,7 @@ body {
   cursor: pointer;
 }
 
-.one-piece-section button:hover {
+.button-op:hover {
   background-color: #0056b3;
 }
 
