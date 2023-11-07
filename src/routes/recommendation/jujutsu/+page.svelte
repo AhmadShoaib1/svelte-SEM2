@@ -47,9 +47,7 @@
   let additionalInfo = "will put info here";
 </script>
 
-<svelte:head>
-  <link rel="stylesheet" href="static/css/main.css" />
-</svelte:head>
+
 <body>
   <div class="additional-info">
     <p>{additionalInfo}</p>
