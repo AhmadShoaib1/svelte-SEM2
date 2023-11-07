@@ -30,7 +30,7 @@
         },
         {
             name: "Nanami Kento",
-            image: "Nanami.jpg",
+            image: "nanami.jpg",
             info: [
                 "Nanami Kento is a character in 'Jujutsu Kaisen.'",
                 "A jujutsu sorcerer known for his pragmatic and no-nonsense approach to combat.",
@@ -57,13 +57,15 @@
 
     <div class="anime-container">
         {#each animeList as { name, image, info } (name)}
-            <div class="anime-entry">
-                <div class="image-container-jj">
+            <div class="anime-entry grid">
+                <div class="image-container-jj s1">
                     <img src={`../img/${image}`} alt={name} />
                 </div>
-                <div class="info-container">
+                <div class="s2">
                     <h2>{name}</h2>
                     <p>{info[info.length - 1]}</p>
+                </div>
+                <div class="info-container s3">
                     <div class="dotted-info">
                         <ul>
                             {#each info as item (item)}
@@ -72,6 +74,7 @@
                         </ul>
                     </div>
                 </div>
+                
             </div>
         {/each}
     </div>
