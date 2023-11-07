@@ -151,12 +151,6 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out;
-  overflow: hidden;
-}
-
-.image-container.flipped {
-  transform: rotateY(180deg);
-  transition: 0.5s ease-in-out;
 }
 .image-container img {
   width: 100%; 
@@ -164,6 +158,10 @@ body {
   object-fit: cover; 
 }
 
+.image-container.flipped {
+  transform: rotateY(180deg);
+  transition: 0.5s ease-in-out;
+}
 
 .front,
 .back {
