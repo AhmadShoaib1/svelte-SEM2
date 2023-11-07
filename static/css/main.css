@@ -32,31 +32,29 @@ body {
 
 
 
-.nav ul li a {
-  color: gray;
-  font-size: 20px;
+.nav ul li a,
+.nav ul li span {
+  color: white; /* Set your desired text color */
   text-decoration: none;
   padding: 5px 10px;
   position: relative;
   transition: all 0.5s;
-  color: white;
-}
-
-.nav ul li span {
-  color: white; 
 }
 
 .nav ul li:hover ul {
   display: block;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav span:hover {
   background-color: dodgerblue;
   color: white;
 }
 
 .nav a::before,
-.nav a::after {
+.nav a::after,
+.nav span::before,
+.nav span::after {
   content: "";
   position: absolute;
   bottom: 12px;
@@ -70,7 +68,9 @@ body {
 }
 
 .nav a:hover::before,
-.nav a:hover::after {
+.nav a:hover::after,
+.nav span:hover::before,
+.nav span:hover::after {
   opacity: 1;
   bottom: -8px;
   left: -8px;
