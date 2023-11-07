@@ -1,7 +1,7 @@
 <nav class="nav">
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/characters">Characters</a></li>
+        <li><a href="/quotes">Quotes</a></li>
         <li>
             <span >Recommendation</span>
             <ul class="dropdown">

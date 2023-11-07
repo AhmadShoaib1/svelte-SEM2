@@ -1,9 +1,0 @@
-<ol>
-  <body>
-    <ol>
-      <li><button>Button</button></li>
-      <li><button>Button</button></li>
-      <li><button>Button</button></li>
-    </ol>
-  </body>
-</ol>
