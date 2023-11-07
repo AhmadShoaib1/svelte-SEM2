@@ -310,3 +310,36 @@ body {
   position: relative;
   left: 5px;
 }
+
+/* one-piece.css */
+
+.one-piece-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.one-piece-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.one-piece-section button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.one-piece-section button:hover {
+  background-color: #0056b3;
+}
+

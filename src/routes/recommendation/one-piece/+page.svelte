@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="css/main.css" />
 </svelte:head>
 
-<div class="header-op">
+<div class="header-op one-piece-section">
     <p>
         " One Piece, created by Eiichiro Oda, is an epic tale of adventure,
         friendship, and the pursuit of dreams. The story follows Monkey D.
@@ -16,4 +16,7 @@
         Crunchyroll, Funimation, or Hulu, where the Straw Hat Pirates'
         adventures unfold in all their glory!"
     </p>
+    <a href="https://aniwave.to/watch/one-piece.ov8/ep-1" target="_blank">
+        <button>Watch Now</button>
+    </a>
 </div>
