@@ -442,7 +442,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*styles for search button*/
+/*styles for search button and area*/
 .search-container {
   display: flex;
   align-items: center;
@@ -451,8 +451,9 @@ body {
 }
 
 .input {
-  padding: 8px;
-  margin-right: 10px;
+  padding: 10px;
+  margin-right: 15px;
+  font-size: 50px;
 }
 
 .SearchButton {
