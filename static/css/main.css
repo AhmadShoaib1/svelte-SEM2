@@ -380,22 +380,44 @@ body {
   transform: scale(1.5);
   transition: transform 0.5 ease-in-out;
 }
+.op-button,
+.jjk-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e74c3c; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; 
+}
+
+.op-button,
+.jjk-button:hover {
+  background-color: #c0392b; 
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
 
 /* styles for quotes page */
 .quotes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  width: auto;
   background-image: url(img/characters.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
 }
 
 .quote-container {
+ margin-top: 25px;
   text-align: center;
+  border: 2px solid black;
   padding: 20px;
-  background-color:white;
+  background-color: white;
 }
 
 .info-row {
+  border: 1px solid black;
   margin-bottom: 10px;
 }

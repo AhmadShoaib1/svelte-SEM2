@@ -44,13 +44,28 @@
       ],
     },
   ];
-  let additionalInfo = "will put info here";
+  let additionalInfo =
+    "Jujutsu Kaisen is a gripping and electrifying anime that seamlessly blends supernatural elements with intense martial arts action. " +
+    "The story follows Yuji Itadori, an ordinary high school student with extraordinary physical abilities. " +
+    "When he stumbles upon a cursed object containing dangerous curses, his life takes a dark turn. " +
+    "To protect his friends and himself, Yuji joins a secret organization dedicated to exorcising curses. " +
+    "Fueled by a perfect mix of humor, suspense, and adrenaline-pumping battles, Jujutsu Kaisen stands out for its dynamic animation, " +
+    "well-developed characters, and a plot that keeps viewers on the edge of their seats. " +
+    "The addition of special techniques and a unique power system known as Cursed Energy adds an extra layer of complexity and excitement to the narrative. " +
+    "With the mysterious and enigmatic antagonist, Sukuna, lurking in the shadows, the stakes are higher than ever. " +
+    "It's a rollercoaster of emotions and a must-watch for any anime enthusiast.";
 </script>
-
 
 <body>
   <div class="additional-info">
     <p>{additionalInfo}</p>
+    <a
+      href="https://aniwave.to/watch/jujutsu-kaisen.32n8/ep-1"
+      target="_blank"
+      class="watch-button"
+    >
+      <button class="jjk-button">Start Watching</button>
+    </a>
   </div>
 
   <div class="anime-container">

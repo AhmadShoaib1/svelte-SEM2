@@ -29,7 +29,7 @@
   });
 </script>
 
-<body class = "quotes">
+<div class = "quotes">
   <div class="quote-container">
     <div class="info-row">
       <p>Character: {character}</p>
@@ -41,10 +41,4 @@
       <p>{quote}</p>
     </div>
   </div>
-</body>
-
-<style>
-  body {
-    background-image: url(img/characters.jpg);
-  }
-</style>
+</div>
