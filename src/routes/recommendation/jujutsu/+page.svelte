@@ -59,6 +59,8 @@
 <body>
   <div class="additional-info">
     <p>{additionalInfo}</p>
+  </div>
+  <div class="button-container">
     <a
       href="https://aniwave.to/watch/jujutsu-kaisen.32n8/ep-1"
       target="_blank"

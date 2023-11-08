@@ -26,6 +26,8 @@
   <body>
     <div class="op-additional-info">
       <p>{onePieceAdditionalInfo}</p>
+    </div>
+    <div class = "button-container">
       <a href="https://aniwave.to/watch/one-piece.ov8/ep-1" target="_blank" class="watch-button">
         <button class="op-button">Start Watching</button>
       </a>

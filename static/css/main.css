@@ -225,6 +225,15 @@ body {
 .additional-info {
   background-color: #ddd;
   padding: 10px;
+  font-size: larger;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+.additional-info:hover {
+  background-color: #2980b9; /* Change to the hover background color */
 }
 
 .anime-container {
@@ -379,6 +388,12 @@ body {
 .op-anime-entry:hover {
   transform: scale(1.5);
   transition: transform 0.5 ease-in-out;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; 
 }
 .op-button,
 .jjk-button {
