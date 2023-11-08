@@ -1,29 +1,50 @@
 <script>
   import { onMount } from "svelte";
   let quote = "";
+  let anime = "";
+  let character = "";
 
   onMount(async () => {
-
     // This is bad. Figure out why the CORS errors are happening.
-    // let notFetched = true;
-    // while (notFetched) {
-    //   try {
-    //     const response = await fetch(
-    //       "https://animechan.xyz/api/random/anime?title=naruto"
-    //     );
+    let notFetched = true;
+    while (notFetched) {
+      try {
+        const response = await fetch(
+          "https://animechan.xyz/api/random/anime?title=naruto"
+        );
 
-    //     const tempQuote = await response.json();
-    //     console.log(tempQuote);
+        const {
+          anime: tempAnime,
+          character: tempCharacter,
+          quote: tempQuote,
+        } = await response.json();
+        console.log(tempAnime, tempCharacter, tempQuote);
 
-    //     quote = tempQuote.quote;
-    //     notFetched = false;
-    //   } catch (e) {}
-    // }
-
-    const res = await fetch(`https://narutodb.xyz/api/character?page=${Math.floor(Math.random() * 100)}&limit=1`);
-    const character =  await res.json();
-    console.log(character)
+        anime = tempAnime;
+        character = tempCharacter;
+        quote = tempQuote;
+        notFetched = false;
+      } catch (e) {}
+    }
   });
 </script>
 
-<div class="quote">{quote}</div>
+<body class = "quotes">
+  <div class="quote-container">
+    <div class="info-row">
+      <p>Character: {character}</p>
+    </div>
+    <div class="info-row">
+      <p>From: {anime}</p>
+    </div>
+    <div class="info-row">
+      <p>{quote}</p>
+    </div>
+  </div>
+</body>
+
+<style>
+  body {
+    background-image: url(img/characters.jpg);
+  }
+</style>

@@ -7,8 +7,7 @@ body {
 
 /* Navigation styling */
 .nav {
-  margin: 10px 0;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -380,4 +379,23 @@ body {
 .op-anime-entry:hover {
   transform: scale(1.5);
   transition: transform 0.5 ease-in-out;
+}
+
+/* styles for quotes page */
+.quotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(img/characters.jpg);
+}
+
+.quote-container {
+  text-align: center;
+  padding: 20px;
+  background-color:white;
+}
+
+.info-row {
+  margin-bottom: 10px;
 }
