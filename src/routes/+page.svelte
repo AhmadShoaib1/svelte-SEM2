@@ -5,8 +5,8 @@
     { name: "Madara", info: "Madara Uchiha, a titan in the tumultuous realm of shinobi, carved his name in history with the indelible strokes of ambition, weaving a tapestry of power and chaos across the ninja world." },
     { name: "Itachi", info: "Itachi Uchiha, a shadow veiled in sacrifice, navigated the labyrinth of darkness to protect the very village that condemned him. His eyes mirrored both tragedy and redemption, leaving an eternal mark on the canvas of ninja lore" },
     { name: "Naruto", info: "Naruto Uzumaki, a spirited hurricane of resilience, carved his legacy with dreams as vast as the Hokage mountain. From the shadows of loneliness, he emerged into a radiant sun, uniting a fractured world with bonds forged in the crucible of his unwavering spirit." },
-    { name: "Minato", info: "Fourth Hokage" },
-    { name: "Jiraiya", info: "Legendary Sannin" },
+    { name: "Minato", info: "Minato Namikaze, the Flash of the Hidden Leaf, left an indelible mark on history with his unparalleled speed and unyielding love. As the Fourth Hokage, he soared through challenges, leaving a legacy of sacrifice and a flicker of hope in the hearts of those who remember the Yellow Flash." },
+    { name: "Jiraiya", info: "Jiraiya, the Toad Sage, navigated the pages of both epic tales and turbulent times. With his wit, charisma, and unyielding spirit, he etched his name in the annals of ninja history. Whether chronicling adventures or facing adversaries, Jiraiya's legacy continues to ripple through the ninja world." },
   ];
   let flipped = Array(characters.length).fill(false);
 
