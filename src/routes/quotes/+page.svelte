@@ -6,6 +6,11 @@
   let anime = "";
   let character = "";
   let search = "";
+  let picURL = ""; 
+  const base_url = `https://api.unsplash.com`;
+  const client_id = `2A2-AhB7VAcSfcQG00esnMfFkaJSeUOWEqrXwq0Tdcs`;
+
+  const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
   const handleSearch = async () => {
     let counter = 0;
@@ -13,9 +18,6 @@
 
     while (counter < maxAttempts) {
       try {
-       
-        console.log("Fetch URL:", `https://animechan.xyz/api/random/anime?title=${search}`);
-
         const response = await fetch(`https://animechan.xyz/api/random/anime?title=${search}`);
 
         const {
@@ -29,6 +31,9 @@
         character = tempCharacter;
         quote = tempQuote;
 
+        await delay(1000);
+        picsearch();
+
         break; 
       } catch (e) {
         console.error("Error fetching data:", e);
@@ -37,7 +42,16 @@
     }
   };
 
-  onMount(handleSearch);
+  const picsearch = async () => {
+    const response = await fetch(`${base_url}/search/photos?query=${search}&per_page=1&client_id=${client_id}`);
+    const data = await response.json();
+    picURL = data.results[0].urls.regular; // Assign the URL to picURL
+    console.log(picURL);
+  }
+
+  onMount(() => {
+    handleSearch();
+  });
 </script>
 
 <div class="quotes">
@@ -56,4 +70,9 @@
       <p>{quote}</p>
     </div>
   </div>
+</div>
+<div class="q-pic">
+  {#if picURL}
+    <img src={picURL} alt="Fetched Anime" />
+  {/if}
 </div>

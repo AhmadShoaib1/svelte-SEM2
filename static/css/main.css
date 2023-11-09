@@ -426,7 +426,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
+  height: auto;
+
 }
 
 .quote-container {
@@ -469,4 +470,18 @@ body {
 .SearchButton:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+}
+.q-pic {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Set a fixed height for the image container */
+  border: solid 2px red;
+  border-radius: 8px;
+}
+
+.q-pic img {
+  width: 100vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
