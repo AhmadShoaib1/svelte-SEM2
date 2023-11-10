@@ -1,5 +1,5 @@
 <script>
-
+//array of the Naruto characters with the information//
   let characters = [
     { name: "Shisui", info: "Shisui Uchiha, a shadow among shadows, his eyes echoing the silent whispers of a legacy written in the ethereal ink of the Uchiha clan.", link: "https://www.google.com/search?q=shisui+uchiha", },
     { name: "Madara", info: "Madara Uchiha, a titan in the tumultuous realm of shinobi, carved his name in history with the indelible strokes of ambition, weaving a tapestry of power and chaos across the ninja world.", link: "https://www.google.com/search?q=madara+uchiha" },
@@ -8,7 +8,7 @@
     { name: "Minato", info: "Minato Namikaze, the Flash of the Hidden Leaf, left an indelible mark on history with his unparalleled speed and unyielding love. As the Fourth Hokage, he soared through challenges, leaving a legacy of sacrifice and a flicker of hope in the hearts of those who remember the Yellow Flash." , link: "https://www.google.com/search?q=minato+namikaze"},
     { name: "Jiraiya", info: "Jiraiya, the Toad Sage, navigated the pages of both epic tales and turbulent times. With his wit, charisma, and unyielding spirit, he etched his name in the annals of ninja history. Whether chronicling adventures or facing adversaries, Jiraiya's legacy continues to ripple through the ninja world." , link: "https://www.google.com/search?q=jiraiya+"},
   ];
-  let flipped = Array(characters.length).fill(false);
+  let flipped = Array(characters.length).fill(false); //tracks wether card is flipped or not//
 
   function toggleFlip(index) {
     flipped[index] = !flipped[index];
@@ -17,7 +17,7 @@
 
 <p class = "main-p">these are the most liked Naruto characters</p>
 <div class="parent">
-  {#each characters as { name, info, link }, index (name)}
+  {#each characters as { name, info, link }, index (name)}  <!-- Individual card for each character with flipping animation -->
     <a
       href={link}
       target="_blank"
@@ -33,7 +33,7 @@
           <img src={`../img/${name.toLowerCase()}.jpg`} alt={name} />
         </div>
         <div class="back">
-          <p>{info}</p>
+          <p>{info}</p>   <!-- Back of the card with character information -->
         </div>
       </div>
     </a>

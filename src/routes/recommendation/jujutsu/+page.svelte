@@ -60,7 +60,7 @@
   <div class="additional-info">
     <p>{additionalInfo}</p>
   </div>
-  <div class="button-container">
+  <div class="button-container"> <!-- "Start Watching" button with styling -->
     <a
       href="https://aniwave.to/watch/jujutsu-kaisen.32n8/ep-1"
       target="_blank"
@@ -71,7 +71,7 @@
   </div>
 
   <div class="anime-container">
-    {#each animeList as { name, image, info } (name)}
+    {#each animeList as { name, image, info } (name)}   <!-- iterate over each character in the animeList -->
       <div class="anime-entry grid">
         <div class="image-container-jj s1">
           <img src={`../img/${image}`} alt={name} />

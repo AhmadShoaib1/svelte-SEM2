@@ -24,22 +24,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
   </svelte:head>
   <body>
-    <div class="op-additional-info">
+    <div class="op-additional-info">  <!-- Container for additional information about "One Piece" -->
       <p>{onePieceAdditionalInfo}</p>
     </div>
-    <div class = "button-container">
+    <div class = "button-container">    <!-- Container for the "Start Watching" button -->
       <a href="https://aniwave.to/watch/one-piece.ov8/ep-1" target="_blank" class="watch-button">
         <button class="op-button">Start Watching</button>
       </a>
     </div>
   
     <div class="op-anime-container">
-      {#each onePieceCharacters as { name, image } (name)}
+      {#each onePieceCharacters as { name, image } (name)}      <!-- Iterate over each character entry in the onePieceCharacters list -->
         <div class="op-anime-entry grid">
-          <div class="op-name-container s1">
+          <div class="op-name-container s1">    <!-- Container for the character's name -->
             <h2>{name}</h2>
           </div>
-          <div class="op-image-container s2">
+          <div class="op-image-container s2">   <!-- Container for the character's image -->
             <img src={`../img/${image}`} alt={name} />
           </div>
         </div>

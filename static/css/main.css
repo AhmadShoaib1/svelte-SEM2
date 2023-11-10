@@ -34,7 +34,6 @@ body {
 .nav ul li a,
 .nav ul li span {
   color: white;
-  /* Set your desired text color */
   text-decoration: none;
   padding: 5px 10px;
   position: relative;
@@ -152,7 +151,7 @@ body {
   padding-top: 20px;
   overflow: hidden;
 }
-
+/* to make it responsive to the smaller screens*/
 @media (max-width: 768px) {
   .child {
     width: 100%;
@@ -281,19 +280,17 @@ body {
 
 .s1 {
   grid-area: s1;
-  background-color: red;
+  width: 350px;
 }
 
 .s2 {
   grid-area: s2;
   text-align: center;
   font-size: x-large;
-  background-color: pink;
 }
 
 .s3 {
   grid-area: s3;
-  background-color: blue;
   text-align: left;
 }
 
@@ -327,7 +324,7 @@ body {
   left: 5px;
 }
 
-/* Add these styles to your main.css file */
+/* styles for the one-piece page */
 
 .op-additional-info {
   background-color: #f0f0f0;
@@ -387,7 +384,8 @@ body {
   border: 1px solid black;
   font-size: 18px;
   margin-top: 10px;
-  font-family: 'pacifico' cursive;
+  width: 250px;
+  padding: 10px;
 }
 .op-anime-entry:last-child {
   width: 100%; 
@@ -481,7 +479,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Set a fixed height for the image container */
+  height: auto; 
   border: solid 2px red;
   border-radius: 8px;
 }
