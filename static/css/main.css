@@ -136,6 +136,12 @@ body {
   padding-top: 15px;
   font-size: larger;
 }
+.main-p2{
+  text-align: center;
+  padding: 15px;
+  font-size: larger;
+  background-color: red;
+}
 
 .child {
   flex: 1;
@@ -195,6 +201,7 @@ body {
 
 .back p {
   text-align: center;
+  border: #666 solid 1px;
   font-size: 25px;
   margin: 0;
 }

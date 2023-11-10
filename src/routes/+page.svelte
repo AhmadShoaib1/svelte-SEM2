@@ -16,6 +16,8 @@
 </script>
 
 <p class = "main-p">these are the most liked Naruto characters</p>
+<p class ="main-p2">click or hover on the pictures</p>
+
 <div class="parent">
   {#each characters as { name, info, link }, index (name)}  <!-- Individual card for each character with flipping animation -->
     <a
