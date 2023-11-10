@@ -14,10 +14,8 @@
     flipped[index] = !flipped[index];
   }
 </script>
-link: "/../img/jiraiya.jpg"
 
-
-<p>these are the most liked Naruto characters</p>
+<p class = "main-p">these are the most liked Naruto characters</p>
 <div class="parent">
   {#each characters as { name, info, link }, index (name)}
     <a
