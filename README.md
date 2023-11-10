@@ -36,8 +36,8 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
->
-> ## Overview of the Project
+
+## Overview of the Project
 The website is about anime in general in the first/main page it displays 6 chracater of anime series Naruto and they are also set as a button which if you click on it will take you to a new window with google search of the name, which i most likely will change to a better websites.
 The second page is about Quotes, it lets you search an anime name and it will display a random quote from that anime series and also name the character, and there is a second api which is used for the picture i am planning to change the because it does not have enough pictures for anime, it is high quality but there just not enough. 
 Then there is my 3rd and 4th page which about Jujutsu Kaisen and One Piece which has button to a website where you can watch the anime, but it is not gooing to open if your not using a private connection(otago poly computer won't open the anime website i have linked to the button).
